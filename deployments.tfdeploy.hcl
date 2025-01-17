@@ -6,8 +6,8 @@ deployment "development" {
   inputs = {
     cidr_block          = "10.0.0.0/16"
     cluster_name        = "eks-dev"
-    region              = "eu-west-1"
-    role_arn            = "arn:aws:iam::975050084720:role/stacks-demo-pedro-ortiz-tfstacks-k8s-vault"
+    region         = "eu-west-2"
+    role_arn       = "arn:aws:iam::958215610051:role/tfc-wif-guybarros"
     identity_token      = identity_token.aws.jwt
     default_tags        = { environment = "development" }
     deploy_vault        = "false"
@@ -20,8 +20,8 @@ deployment "production" {
   inputs = {
     cidr_block          = "10.1.0.0/16"
     cluster_name        = "eks-prod"
-    region              = "eu-west-1"
-    role_arn            = "arn:aws:iam::975050084720:role/stacks-demo-pedro-ortiz-tfstacks-k8s-vault"
+    region         = "eu-west-2"
+    role_arn       = "arn:aws:iam::958215610051:role/tfc-wif-guybarros"
     identity_token      = identity_token.aws.jwt
     default_tags        = { environment = "production" }
     deploy_vault        = "true"
